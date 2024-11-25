@@ -27,6 +27,14 @@
         }
         if ($_GET["accion"] == "cancelar") {
             $controlador->verPagina('Vista/html/cancelar.php');
+        } elseif ($_GET["accion"] == "guardarCita") {
+            $controlador->agregarCita(
+                $_POST["asignarDocumento"],
+                $_POST["medico"],
+                $_POST["fecha"],
+                $_POST["hora"],
+                $_POST["consultorio"]
+            );
         }
     } else {
         $controlador->verPagina('Vista/html/inicio.php');
