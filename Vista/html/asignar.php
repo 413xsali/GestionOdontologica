@@ -85,7 +85,6 @@
                     </tr>
                 </table>
             </form>
-            <p>Contenido de la página</p>
         </div>
     </div>
 </body>
